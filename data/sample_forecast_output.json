@@ -1,0 +1,6 @@
+{
+  "product_id": "SKU_00123",
+  "forecasted_days_until_stockout": 5,
+  "current_quantity": 12,
+  "suggested_reorder_qty": 50
+}
