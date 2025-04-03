@@ -1,13 +1,6 @@
-
----
-
-## 🧪 Input & Output Examples
-
-### ➤ Inventory Update Payload (JSON)
-```json
 {
-  "product_id": "SKU_00123",
-  "location": "warehouse-1",
-  "change": -3,
-  "timestamp": "2025-04-03T10:23:00Z"
+  "product_id": "SKU_00123",                // Unique identifier for the product
+  "location": "warehouse-1",                // Location code or warehouse name
+  "change": -3,                             // Positive (restock), negative (sale/shrink)
+  "timestamp": "2025-04-03T10:23:00Z"       // ISO 8601 timestamp of transaction
 }
