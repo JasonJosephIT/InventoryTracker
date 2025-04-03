@@ -1,6 +1,7 @@
 {
-  "product_id": "SKU_00123",
-  "forecasted_days_until_stockout": 5,
-  "current_quantity": 12,
-  "suggested_reorder_qty": 50
+  "product_id": "SKU_00123",                    // Matches input ID
+  "forecasted_days_until_stockout": 5,          // Days until stock runs out at current rate
+  "current_quantity": 12,                       // Pulled from inventory DB
+  "suggested_reorder_qty": 50,                  // Based on lead time, sales velocity
+  "recommended_reorder_date": "2025-04-06"      // Date to place order to avoid stockout
 }
