@@ -19,23 +19,23 @@
     "source": "POS",
     "combo": true
   },
-  {
-    "product_id": "1501",
-    "base_product_id": "501",
+    {
+    "product_id": "S201",
+    "base_product_id": "01",
     "category": "shirt",
     "change": -1,
-    "location": "store-1",
-    "timestamp": "2025-04-03T16:28:00Z",
+    "location": "store-2",
+    "timestamp": "2025-04-03T16:25:00Z",
     "source": "POS",
     "combo": false
   },
   {
-    "product_id": "3002",
-    "base_product_id": "002",
+    "product_id": "T112",
+    "base_product_id": "12",
     "category": "tie",
     "change": -1,
-    "location": "store-1",
-    "timestamp": "2025-04-03T16:28:00Z",
+    "location": "store-2",
+    "timestamp": "2025-04-03T16:26:00Z",
     "source": "POS",
     "combo": false
   }
