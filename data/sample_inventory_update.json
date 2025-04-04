@@ -1,7 +1,7 @@
 [
   {
-    "product_id": "62P12",                  // Unique identifier for the product
-    "base_product_id": "P12",               // Identifier product type the other number intdicate the sizing
+    "product_id": "P2145",                  // Unique identifier for the product
+    "base_product_id": "45",               // Identifier product type the other number intdicate the sizing
     "category": "pants",                    // What type of product is being purchased
     "change": -1,                           // Positive (restock), negative (sale/shrink) 
     "location": "store-1",                  // Location code or warehouse name
@@ -10,8 +10,8 @@
     "combo": true                           // Whether item was bought as a pair only applies to jacket and pants(suit items) others will alway be "false" 
   },
   {
-    "product_id": "83J12",
-    "base_product_id": "J12",
+    "product_id": "J8345",
+    "base_product_id": "45",
     "category": "jacket",
     "change": -1,
     "location": "store-1",
