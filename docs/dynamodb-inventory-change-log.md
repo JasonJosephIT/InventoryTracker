@@ -1,3 +1,5 @@
+DynamoDB Table Design: inventory_change_log
+
 Table Name
 
 inventory_change_log
@@ -10,9 +12,9 @@ Primary Keys
 
 Partition Key: location (String)
 
-Sort Key: timestamp (String, ISO 8601 format)
+Sort Key: transaction_id (String, unique identifier per event)
 
-Rationale: This allows efficient querying of all inventory changes at a specific location within a time range.
+Rationale: This allows efficient querying of all inventory changes at a specific location with precise traceability using transaction IDs.
 
 Secondary Indexes
 
@@ -86,6 +88,12 @@ String
 
 Unique ID for bundled jacket+pants pair
 
+transaction_id
+
+String
+
+Unique transaction identifier used as sort key
+
 Capacity Mode
 
 On-Demand (Pay-per-request)
@@ -125,3 +133,4 @@ Efficient access patterns aligned with query types
 Sustainability
 
 Table optimized for high-throughput, event-driven workloads
+
