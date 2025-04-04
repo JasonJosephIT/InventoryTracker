@@ -1,6 +1,42 @@
-{
-  "product_id": "SKU_00123",                // Unique identifier for the product
-  "location": "warehouse-1",                // Location code or warehouse name
-  "change": -3,                             // Positive (restock), negative (sale/shrink)
-  "timestamp": "2025-04-03T10:23:00Z"       // ISO 8601 timestamp of transaction
-}
+[
+  {
+    "product_id": "62P12",                  // Unique identifier for the product
+    "base_product_id": "P12",               // Identifier product type the other number intdicate the sizing
+    "category": "pants",                    // What type of product is being purchased
+    "change": -1,                           // Positive (restock), negative (sale/shrink) 
+    "location": "store-1",                  // Location code or warehouse name
+    "timestamp": "2025-04-03T16:28:00Z",    // ISO 8601 timestamp of transaction
+    "source": "POS",                        // How item was processed
+    "combo": true                           // Whether item was bought as a pair only applies to jacket and pants(suit items) others will alway be "false" 
+  },
+  {
+    "product_id": "83J12",
+    "base_product_id": "J12",
+    "category": "jacket",
+    "change": -1,
+    "location": "store-1",
+    "timestamp": "2025-04-03T16:28:00Z",
+    "source": "POS",
+    "combo": true
+  },
+  {
+    "product_id": "1501",
+    "base_product_id": "501",
+    "category": "shirt",
+    "change": -1,
+    "location": "store-1",
+    "timestamp": "2025-04-03T16:28:00Z",
+    "source": "POS",
+    "combo": false
+  },
+  {
+    "product_id": "3002",
+    "base_product_id": "002",
+    "category": "tie",
+    "change": -1,
+    "location": "store-1",
+    "timestamp": "2025-04-03T16:28:00Z",
+    "source": "POS",
+    "combo": false
+  }
+]
