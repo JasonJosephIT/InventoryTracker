@@ -12,9 +12,9 @@ Primary Keys
 
 Partition Key: combo_id (String)
 
-Sort Key: timestamp (String, ISO 8601 format)
+Sort Key: transaction_id (String, unique identifier per detection event)
 
-Rationale: Each combo has a unique identifier (e.g., J2345-P2345) where jacket and pants have matching base_product_id. timestamp supports time-range analysis.
+Rationale: Each combo has a unique identifier (e.g., J2345-P2345) where jacket and pants have matching base_product_id. transaction_id enables deduplication and precise audit tracking.
 
 Table Attributes
 
@@ -29,6 +29,18 @@ combo_id
 String
 
 Unique ID for combo, e.g. J2345-P2345 (jacket and pants share the same base_product_id)
+
+transaction_id
+
+String
+
+Unique event-level identifier for this detection event
+
+timestamp
+
+String
+
+ISO 8601 formatted timestamp (for sorting, analytics)
 
 jacket_id
 
@@ -53,12 +65,6 @@ location
 String
 
 Store where the combo was sold
-
-timestamp
-
-String
-
-ISO 8601 formatted timestamp
 
 quantity
 
@@ -111,3 +117,4 @@ Keys support time-series + audit-based access
 Sustainability
 
 Lightweight design ensures minimal resource consumption
+
